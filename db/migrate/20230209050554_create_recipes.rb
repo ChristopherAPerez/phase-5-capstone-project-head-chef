@@ -4,8 +4,8 @@ class CreateRecipes < ActiveRecord::Migration[6.1]
       t.string :name
       t.string :chef_username
       t.string :meal
-      t.array :ingredients
-      t.array :steps
+      t.text :ingredients
+      t.text :steps
       t.string :description
       t.integer :calories
       t.integer :prep_time
